@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="eng" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>Slide Bar</title>
+	<link rel="stylesheet" type="text/css" href="css-slidebar/style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css ">
+</head>
+<body>
+	
+	<input type="checkbox" id="check">
+
+	<!-- header AWAL -->
+	<header>
+		<div class="left_area">
+			<h3>SMA <span>COKROAMINOTO</span></h3>
+		</div>
+		<div class="right_area">			
+			<a href="#" class="show"><i class="fas fa-sort-down"></i></i></a>
+			<a href="#" class="user"><i class="fas fa-user" ></i></a>
+			<a href="#" class="chat"><i class="far fa-comment-alt"></i></a>
+			<a href="#" class="notification"><i class="far fa-bell"></i></a>
+		</div>
+	</header>
+	<!-- header AWAL -->
+	<!-- header Akhir -->
+	<div class="slidebar">
+		<center>
+			<img src="images/logo.png" class="profil_image" alt="">
+			<h4>Rohmat Gunawan</h4>
+		</center>
+		<label for="check">
+			<i class="fas fa-chevron-right" id="slidebar_btn"></i>
+		</label>
+		<a href="#"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+		<a href="#"><i class="fas fa-cogs"></i><span>Component</span></a>
+		<a href="#"><i class="fas fa-table"></i><span>Tables</span></a>
+		<a href="#"><i class="fas fa-th"></i><span>Forms</span></a>
+		<a href="#"><i class="fas fa-info-circle"></i><span>About</span></a>
+		<a href="#"><i class="fas fa-sliders-h"></i><span>Setting</span></a>
+	</div>
+	<!-- header Akhir -->
+	<div class="content">
+	</div>
+</body>
+</html>
