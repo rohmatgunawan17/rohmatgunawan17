@@ -1,0 +1,349 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;
+}
+
+header{
+	position: fixed;
+	background: #22242A;
+	padding: 20px;
+	width: 100%;
+	height: 30px;
+}
+
+.left_area h3{
+	color: #fff;
+	margin: 0;
+	text-transform: uppercase;
+	font-size: 22px;
+	font-weight: 900;
+	cursor: pointer;
+}
+
+.left_area span{
+	color: #1DC4E7;
+}
+
+/*.right_area a{
+	color: #fff;
+	display: block;
+	width: 100%;
+	line-height: 60px;
+	text-decoration: none;
+	padding-left: 40px;
+	box-sizing: border-box;
+	transition: 0.5s;
+	transition-property: background;
+}*/
+
+.right_area .user i{
+	padding: 5px;
+	text-decoration: none;
+	float: right;
+	margin-top: -30px;
+	margin-right: 50px;
+	border-radius: 2px;
+	font-size: 20px;
+	font-weight: 600;
+	color: #fff;
+	transition: 0.5s;
+	transition-property: background;0
+}
+
+.right_area .show i{
+	padding: 5px;
+	text-decoration: none;
+	float: right;
+	margin-top: -30px;
+	margin-right: 30px;
+	border-radius: 2px;
+	font-size: 20px;
+	font-weight: 600;
+	color: #fff;
+	transition: 0.5s;
+	transition-property: background;
+}
+
+.right_area .notification i{
+	padding: 5px;
+	text-decoration: none;
+	float: right;
+	margin-top: -28px;
+	margin-right: 10px;
+	border-radius: 2px;
+	font-size: 20px;
+	font-weight: 600;
+	color: #fff;
+	transition: 0.5s;
+	transition-property: background;
+}
+
+.right_area .chat i {
+	padding: 5px;
+	text-decoration: none;
+	float: right;
+	margin-top: -28px;
+	margin-right: 85px;
+	border-radius: 2px;
+	font-size: 20px;
+	font-weight: 600;
+	color: #fff;
+	transition: 0.5s;
+	transition-property: background;
+}
+
+.right_area .chat :hover{
+	padding: 5px;
+	text-decoration: none;
+	float: right;
+	margin-top: -28px;
+	margin-right: 85px;
+	border-radius: 2px;
+	font-size: 20px;
+	font-weight: 600;
+	color: #fff;
+	transition: 0.5s;
+	transition-property: background;
+}
+
+
+.slidebar{
+	font-size: 25px;
+	background: #2F323A;
+	margin-top: 70px;
+	padding-top: 30px;
+	position: fixed;
+	left: 0;
+	width: 250px;
+	height: 100%;
+	transition: 0.5s;
+	transition-property: left;
+}
+
+.slidebar .profil_image{
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+	margin-bottom: 10px;
+}
+
+.slidebar h4{
+	color: #ccc;
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+
+.slidebar a{
+	color: #fff;
+	display: block;
+	width: 100%;
+	line-height: 60px;
+	text-decoration: none;
+	padding-left: 40px;
+	box-sizing: border-box;
+	transition: 0.5s;
+	transition-property: background;
+}
+
+.slidebar a:hover{
+	background: #19B3D3;
+}
+
+.slidebar i{
+	padding-right: 10px;
+
+}
+
+label #slidebar_btn{
+	z-index: 1;
+	color: #fff;
+	position: fixed;
+	cursor: pointer;
+	left: 250px;
+	top: 430px;
+	font-size: 40px;
+	margin: 10px 0;
+	transition: 0.3s ease;
+	
+}
+
+label #slidebar_btn:hover{
+	color: #19B3D3;
+}
+
+#check:checked ~ .slidebar label #slidebar_btn{
+	left: 50px;
+	transform: translateY(4px) rotateZ(180deg);
+}
+
+#check:checked ~ .slidebar{
+	left: -190px;
+}
+
+#check:checked ~ .slidebar a span{
+	display: none;
+}
+
+#check:checked ~ .slidebar a{
+	font-size: 25px;
+	margin-left: 170px;
+	width: 80px;
+}
+
+#check:checked ~ .slidebar h4{
+	display: none;
+}
+
+.content{
+	margin-left: 250px;
+	background: url(../images/bg_home.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	transition: 0.5s;
+	background-color: #19B3D3;
+}
+
+#check:checked ~ .content{
+	margin-left: 60px;
+}
+
+#check{
+	display: none;
+}
+
+/*MENU*/
+
+/*.header{  
+  background-color: #a8a4a4;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  margin: 0;
+}*/
+
+.header a{
+  text-decoration: none;
+  color: black;
+  padding: 5px 20px;
+  border: 1px solid transparent;
+}
+
+.header a:hover{
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  padding: 12px 20px 12px 20px;
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
+}
+
+.header ul{  
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header ul a{
+  display: block;
+  outline: 1px solid blue;
+  padding: 20px;
+  border-right: 0px solid #aaa;
+  text-decoration: none;
+}
+
+.header ul a:hover{
+  background-color: #ccc;
+
+}
+
+.header .logo{
+  /*float: left;
+  display: block;
+  font-size: 18px;
+  padding: 10px 20px;*/
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 12px 20px 12px 40px;
+  background-image: url('../images/logo.png');
+  background-repeat: no-repeat;
+  background-position: 1px 1px;
+  cursor: pointer;
+
+}
+
+.header .menu{
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+.header .menu-icon{
+  padding: 20px 20px;
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+
+.header .menu-icon:hover{
+  top: 1px;
+  background-color: #ccc;
+}
+
+.header .menu-icon .nav-icon{
+  background-color: #333;
+  display: block;
+  height: 2px;
+  width: 18px;
+  position: relative;
+  transition: background .2s ease-out;
+}
+
+.header .menu-icon .nav-icon:before{
+  background-color: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  top: 5px;
+}
+
+.header .menu-icon .nav-icon:after{
+  background-color: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  top: -5px;
+}
+
+.header .menu-btn{
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu{
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon{
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before{
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after{
+  transform: rotate(45deg);
+   top: 0;
+}
